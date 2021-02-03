@@ -46,34 +46,35 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: .1875em solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 header h1 {
-	margin: 0;
-	padding: 2.375em 0;
+	border-bottom: .1875em solid #77a466;
+	line-height: 2em;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 2.875em 0;
+	padding: .5em 0;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	text-align: justify;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: .875em;
-	padding: 0 .625em;
-	display: inline;
+	font-size: 1em;
+	display: flex;
+	padding-bottom: 2em;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -89,12 +90,16 @@ header nav ul li a{
 	align-items: center;
 }
 
+.top-section {
+		flex-flow: row wrap;
+}
+
 .main-image {
 	height: 100%;
 }
 .main-image img {
 	width: 100%;
-	border-bottom: .1875em solid #77a466;
+	border: .1875em solid #77a466;
 	height: auto;
 }
 
@@ -112,10 +117,15 @@ header nav ul li a{
 	line-height: 1.5625em;
 }
 
+.bottom-section {
+		flex-flow: column wrap;
+		width: 100%;
+}
+
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	border-top: .0625em solid #eee;
 }
 
@@ -124,13 +134,12 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: .0625em solid #eee;
-	border-right: .0625em solid #eee;
+	border-top: .0625em solid #eee;
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: .625em 1.875em;
+	padding: .625em 0;
 }
 
 .menu {
@@ -146,6 +155,7 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 1.3125em;
+	padding: .75em 0;
 }
 
 .address {
@@ -156,11 +166,11 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	border-top: .1875em solid #eee;
-	margin: 0 auto;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 1em;
 }
 footer span {
 	font-family: 'Galada', cursive;
